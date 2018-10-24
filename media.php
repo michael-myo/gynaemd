@@ -130,6 +130,18 @@
 				<div class="pdf-grid">
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-6">
+							<a href="http://files.gynaemd.com.sg/pdf/supreme-parents-nov-2018.pdf" target="_blank">
+								<div class="pdf-item fix-height" data-fix-height-group="pdf-group" style="height: 386px;">
+									<div class="pdf-thumbnail">
+										<img src="<?php echo homepage_url() ?>dist/images/supreme-parents-nov-2018.png" class="img-responsive">
+									</div>
+									<div class="pdf-title">
+										Supreme Parents November 2018											
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<a href="http://files.gynaemd.com.sg/pdf/supreme-parents-august-2018.pdf" target="_blank">
 								<div class="pdf-item fix-height" data-fix-height-group="pdf-group" style="height: 386px;">
 									<div class="pdf-thumbnail">
@@ -368,19 +380,7 @@
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<a href="http://files.gynaemd.com.sg/pdf/simply-her-jan-16.pdf" target="_blank">
-								<div class="pdf-item fix-height" data-fix-height-group="pdf-group" style="height: 386px;">
-									<div class="pdf-thumbnail">
-										<img src="<?php echo homepage_url() ?>dist/images/simply-her-jan-16.png" class="img-responsive">
-									</div>
-									<div class="pdf-title">
-										Simply Her January 2016											
-									</div>
-								</div>
-							</a>
-						</div>
+						</div>						
 						
 						
 					</div>
