@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?php echo homepage_url() ?>dist/css/style.min.css?ver=1.0.6" media="all" type="text/css" />

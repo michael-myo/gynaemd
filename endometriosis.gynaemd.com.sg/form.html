@@ -1,0 +1,40 @@
+<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script src="js/captcha.js" type="text/javascript"></script>   
+<script>
+(function () {
+var e = document.getElementById("uraBotDiv");
+e.parentNode.removeChild(e);
+})();
+</script>
+
+<form action="http://ebasoft.com.sg/activamedia/admin/mailscript.asp" method="post" name="form1" id="form1">
+          <input type="hidden" name="Subject" value="Endometriosis | GynaeMD Women's & Rejuvenation Clinic - Enquiry Form">
+          <!--<input type="hidden" name="SendTo" value="gynaemd@singnet.com.sg">-->
+          <input type="hidden" name="SendTo" value="gynaemd@singnet.com.sg">
+          <input type="hidden" name="Failed" value="contact-us.html" />
+          <input type="hidden" name="Success" value="contactus-success.html" />
+          <input type="hidden" name="URL" value="endometriosis.gynaemd.com.sg">
+          
+          
+          <input type="text" id="name" name="Name" value="" placeholder="Name: *" required>
+         
+          
+          <div id="uraBotDiv">
+          <label for="uraBot">Leave this field blank</label>
+          <input type="text" name="uraBot" id="uraBot" autocomplete="off" autofill="off" >
+          </div>
+        
+          <input type="text" id="mobile" onkeypress="return isNumberKey(event)" name="Contact No" placeholder="Contact No: *" value="" required>     
+          <input type="text" id="email" name="Email" placeholder="Email: *" value="" required>  
+          <textarea rows="10" id="message" cols="30" name="Message" placeholder="Message :"></textarea>
+          
+          <div class="row">
+          <div id="captchadiv" class="g-recaptcha"></div>
+          </div>
+          
+          <input name="SubmitForm" type="submit" class="submitCls" id="submitBtn" value="Submit Your Enquiry">
+          
+          </form>
+          
+          
+          <script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit" async defer></script>

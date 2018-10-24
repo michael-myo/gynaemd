@@ -1,0 +1,48 @@
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^gynaemd.com.sg [NC]
+#RewriteRule ^(.*)$ https://www.gynaemd.com.sg/$1 [L,R=301,NC]
+
+############################
+## Redirect http to https ##
+############################
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} www.gynaemd.com.sg
+RewriteRule (.*) https://www.gynaemd.com.sg/$1 [R=301,L]
+#############################
+
+##############################
+## Redirect non www to www  ##
+##############################
+RewriteCond %{HTTP_HOST} ^gynaemd.com.sg [NC]
+RewriteRule ^(.*)$ https://www.gynaemd.com.sg/$1 [L,R=301,NC]
+##############################
+
+
+
+###########################
+
+## Rewrite .php to .html ##
+
+###########################
+
+RewriteRule google6f2efe17cbe65d75.html - [L,NC]
+RewriteRule aesthetics.gynaemd.com.sg - [L,NC]
+RewriteRule birthcontrol.gynaemd.com.sg - [L,NC]
+RewriteRule bodycontouring.gynaemd.com.sg - [L,NC]
+RewriteRule contraception.gynaemd.com.sg - [L,NC]
+RewriteRule endometriosis.gynaemd.com.sg - [L,NC]
+RewriteRule expatgynaecologist.gynaemd.com.sg - [L,NC]
+RewriteRule fertility.gynaemd.com.sg - [L,NC]
+RewriteRule fibroids.gynaemd.com.sg - [L,NC]
+RewriteRule gynaecologist.gynaemd.com.sg - [L,NC]
+RewriteRule healthscreening.gynaemd.com.sg - [L,NC]
+RewriteRule ig.gynaemd.com.sg - [L,NC]
+RewriteRule ivf.gynaemd.com.sg - [L,NC]
+RewriteRule laparoscopic.gynaemd.com.sg - [L,NC]
+RewriteRule ovariancyst.gynaemd.com.sg - [L,NC]
+RewriteRule papsmear.gynaemd.com.sg - [L,NC]
+RewriteRule pregnancy.gynaemd.com.sg - [L,NC]
+RewriteRule urogynaecology.gynaemd.com.sg - [L,NC]
+RewriteCond %{REQUEST_FILENAME} =-f
+RewriteRule ^(.*)\.php$ $1.html [NC,L]
+RewriteRule ^(.*)\.html$  $1.php [NC,L]
